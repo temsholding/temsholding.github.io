@@ -1,0 +1,262 @@
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
+    /* written by riliwan balogun http://www.facebook.com/riliwan.rabo*/
+
+    .board {
+      width: 75%;
+      margin: 110px auto;
+      box-shadow: 10px 10px #ccc, -10px 20px #ddd;
+      height:400px;
+    }
+
+    .board .nav-tabs {
+      position: relative;
+       border-bottom: 0;
+       width: 80%;
+      margin: 80px auto;
+      margin-bottom: 0;
+      margin-left: 120;
+      box-sizing: border-box;
+    }
+
+    .board>div.board-inner {
+      background: #fafafa url(http://subtlepatterns.com/patterns/geometry2.png);
+      background-size: 30%;
+    }
+
+    p.narrow {
+      width: 80%;
+      margin: 20px auto;
+    }
+
+    .liner {
+      height: 2px;
+      background: #ddd;
+      position: absolute;
+      width: 60%;
+      margin: 0 auto;
+      left: -50;
+      right:0;
+      top: 50%;
+      z-index: 1;
+    }
+
+    .nav-tabs>li.active>a,
+    .nav-tabs>li.active>a:hover,
+    .nav-tabs>li.active>a:focus {
+      color: #555555;
+      cursor: default;
+      /* background-color: #ffffff; */
+      border: 0;
+      border-bottom-color: transparent;
+    }
+
+    span.round-tabs {
+      width: 70px;
+      height: 70px;
+      line-height: 90px;
+      display: inline-block;
+      border-radius: 100px;
+      background: white;
+      z-index: 2;
+      position: absolute;
+      left: 0;
+      text-align: center;
+      padding-top: 18px;
+      font-size: 25px;
+    }
+
+    span.round-tabs.one{
+        color: #f1685e;border: 2px solid #f1685e;
+    }
+
+    li.active span.round-tabs.one{
+        background: #fff !important;
+        border: 2px solid #ddd;
+        color: #f1685e;
+    }
+
+    span.round-tabs.two{
+        color: rgb(34, 194, 34);border: 2px solid rgb(34, 194, 34);
+    }
+
+    li.active span.round-tabs.two{
+        background: #fff !important;
+        border: 2px solid #ddd;
+        color: rgb(34, 194, 34);
+    }
+
+    span.round-tabs.three{
+        color: #febe29;border: 2px solid #febe29;
+    }
+
+    li.active span.round-tabs.three{
+        background: #fff !important;
+        border: 2px solid #ddd;
+        color: #febe29;
+    }
+
+    .nav-tabs>li.active>a span.round-tabs {
+      background: #fafafa;
+    }
+
+    .nav-tabs>li {
+      width: 30%;
+    }
+
+    .nav-tabs>li:after {
+      content: " ";
+      position: absolute;
+      left: 45%;
+      opacity: 0;
+      margin: 0 auto;
+      bottom: 0px;
+      border: 5px solid transparent;
+      border-bottom-color: #ddd;
+      transition: 0.1s ease-in-out;
+    }
+
+    .nav-tabs>li.active:after {
+      content: " ";
+      position: absolute;
+      left: 45%;
+      opacity: 1;
+      margin: 0 auto;
+      bottom: 0px;
+      border: 10px solid transparent;
+      border-bottom-color: #ddd;
+    }
+
+    .nav-tabs>li a {
+      width: 70px;
+      height: 70px;
+      margin: 20px auto;
+      border-radius: 100%;
+      padding: 0;
+    }
+
+    .nav-tabs>li a:hover {
+      background: transparent;
+    }
+
+    .tab-content {}
+
+    .tab-pane {
+      position: relative;
+      padding-top: 50px;
+    }
+
+    .tab-content .head {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 25px;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+    }
+
+    .btn-outline-rounded {
+      padding: 10px 40px;
+      margin: 20px 0;
+      border: 2px solid transparent;
+      border-radius: 25px;
+    }
+
+    @media( max-width: 585px) {
+
+      .board {
+        width: 90%;
+        height: auto !important;
+      }
+      span.round-tabs {
+        font-size: 16px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+      }
+      .tab-content .head {
+        font-size: 20px;
+      }
+      .nav-tabs>li a {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+      }
+
+      .nav-tabs>li.active:after {
+        content: " ";
+        position: absolute;
+        left: 35%;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <a href="temsholding.mk"><h5><span class="glyphicon glyphicon-home"></span> Почетна</h5></a>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="board">
+          <!-- <h2>Welcome to IGHALO!<sup>™</sup></h2>-->
+          <div class="board-inner">
+            <ul class="nav nav-tabs" id="myTab">
+              <div class="liner"></div>
+              <li class="active">
+                <a href="#home" data-toggle="tab" title="локација">
+                        <span class="round-tabs one">
+                                <i class="glyphicon glyphicon-map-marker"></i>
+                        </span>
+                    </a></li>
+
+              <li><a href="#profile" data-toggle="tab" title="тел">
+                       <span class="round-tabs two">
+                         <i class="glyphicon glyphicon-earphone"></i>
+                       </span>
+             </a>
+              </li>
+              <li><a href="#messages" data-toggle="tab" title="email-адреса">
+                       <span class="round-tabs three">
+                            <i class="glyphicon glyphicon-glyphicon glyphicon-envelope"></i>
+                       </span> </a>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="tab-content">
+            <div class="tab-pane fade in active" id="home">
+              <h3 class="head text-center"><b>ЛОКАЦИЈА:</b></h3>
+              <h3 class="text-center">ул.Добромир Хрс бр.55-а - СКОПЈЕ</h3>
+              <h3 class="text-center">ул.Солунска бр.286-а - БИТОЛА</h3>
+              <h3 class="text-center">ул.Бул.Цветан Димов бр.3-а - КАВАДАРЦИ</span></h3>
+
+            </div>
+            <div class="tab-pane fade" id="profile">
+              <h3 class="head text-center"><b>КОНТАКТ НА ТЕЛ:</b></h3>
+              <h3 class="text-center">078/247-896 - СКОПЈЕ</h3>
+              <h3 class="text-center">070/256-524; 070/256-621 - БИТОЛА</h3>
+              <h3 class="text-center">078/247-898 - КАВАДАРЦИ</span></h3>
+            </div>
+            <div class="tab-pane fade" id="messages">
+              <h3 class="head text-center"><b>КОНТАКТ НА email АДРЕСА:</b></h3>
+              <h3 class="text-center">stimsasko@hotmail.com</h3>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $(function() {
+      $('a[title]').tooltip();
+    });
+  </script>
+</body>
+
+</html>

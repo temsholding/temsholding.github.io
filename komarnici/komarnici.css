@@ -1,0 +1,185 @@
+@import "https://fonts.googleapis.com/css?family=Fira+Sans:300,400";
+body,
+html {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #f4f4f4;
+  background: linear-gradient(0deg, #eae4e4, #f4f4f4);
+  font-family: "Fira Sans", helvetica, arial, sans-serif;
+}
+
+#portfolio {
+  margin-left: -50px;
+  margin-right: -150px;
+  display: block;
+  padding: 10px;
+  width: 110%;
+  height: 100%;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.gallery .gallery-mask {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  transition: all .2s ease-out;
+  opacity: 0;
+  display: none;
+}
+
+.gallery .gallery-mask.active {
+  display: block;
+  transition: all .6s ease-out;
+  opacity: 1;
+}
+
+.gallery-item {
+  /*display: flex;*/
+  position: relative;
+  width: 24.5%;
+  height: 200px;
+  background-color: white;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  background: white no-repeat center center;
+  background-size: cover;
+  box-shadow: 3px 5px 15px -3px rgba(0, 0, 0, 0.3);
+  transition: all .4s ease-out;
+  overflow: hidden;
+  z-index: 3;
+  height: 500px;
+}
+
+.gallery-item h2 {
+  color: black;
+  font-weight: 300;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item:hover .item-mask {
+  opacity: 0;
+}
+
+.gallery-item.active {
+  opacity: 0;
+  transform: scale(0.4);
+}
+
+@media (max-width: 760px) {
+  .gallery-item {
+    width: 48%;
+  }
+}
+
+.card {
+  display: block;
+  position: absolute;
+  top: -200%;
+  left: 0;
+  width: 30%;
+  height: 200px;
+  padding: 50px;
+  background: white;
+  overflow: hidden;
+  z-index: 200;
+  box-shadow: 5px 7px 20px -5px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 760px) {
+  .card {
+    width: 48%;
+  }
+}
+
+.card .btn-close {
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.card h1,
+.card p {
+  width: 700px;
+  transition: all .4s linear;
+}
+
+.card.active {
+  top: 50% !important;
+  left: 50% !important;
+  width: 600px;
+  height: 60%;
+  transform: translate(-50%, -50%);
+  transition: all .4s ease-in;
+}
+
+.card.active h1,
+.card.active p {
+  width: 500px;
+}
+
+@media (max-width: 760px) {
+  .card.active {
+    width: 320px;
+    padding: 50px 30px;
+  }
+  .card.active h1,
+  .card.active p {
+    width: 260px;
+  }
+}
+
+.card.transit {
+  transform: translate(-50%, -100%);
+  opacity: 0;
+}
+
+.backdrop {
+  display: block;
+  /*position: absolute;*/
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent no-repeat center center;
+  background-size: cover;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity .6s ease-in;
+}
+
+.backdrop.active {
+  opacity: 1;
+}
+
+h1 {
+  text-align: center;
+  color: grey;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-left: 40px;
+}

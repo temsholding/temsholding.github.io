@@ -1,1 +1,115 @@
-Tems Holding 
+<html>
+
+<head>
+  <title>Tems Holding</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+  <link href="slider/slider.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- <script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script> -->
+
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <a class="navbar-brand" href="#">temsholding.mk</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Почетна</a></li>
+          <li><a href="prozori/prozori.html">Прозори</a></li>
+          <li><a href="vrati/vrati.html">Врати</a></li>
+          <li><a href="roletni/roletni.html">Ролетни</a></li>
+          <li><a href="komarnici/komarnici.html">Комарници</a></li>
+          <li id="right"><a href="info.html">За нас</a></li>
+          <li><a href="kontakt.html">Контакт</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="slider">
+    <!-- slide -->
+    <ul>
+      <li class="active">
+        <div class="slide">
+          <div class="container">
+            <h2>Акција!!! Акција!!! Акција!!! PVC прозори и врати</h2>
+            <div class="slide-center">
+              <div class="images">
+                <img src="slider/img1.png" width="100" height="100">
+                <img src="slider/img2.png" width="100" height="100">
+                <img src="slider/img3.png" width="100" height="100">
+              </div>
+            </div>
+            <h2>НЕ ПРОПУШТАЈТЕ!!!</h2>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="slide">
+          <div class="container">
+            <div class="slide-center">
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="slide">
+          <div class="container">
+            <h2>20% попуст за плаќање во готово</h2>
+            <div class="slide-center">
+            </div>
+            <h2></h2>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="slide">
+          <div class="container">
+          </div>
+        </div>
+      </li>
+    </ul>
+    <ol>
+      <!-- point -->
+      <li class="active"><i class="fa fa-circle-o"></i></li>
+      <li><i class="fa fa-circle-o"></i></li>
+      <li><i class="fa fa-circle-o"></i></li>
+      <li><i class="fa fa-circle-o"></i></li>
+      <li><i class="fa fa-circle-o"></i></li>
+      <!-- playpause -->
+      <i class="fa playpause fa-pause-circle-o" title="pause"></i>
+    </ol>
+    <!-- controll -->
+    <span class="controll active"></span>
+    <span class="controll"></span>
+  </div>
+
+
+  <div class="container">
+    <div ng-app="myApp">
+      <div ng-view></div>
+    </div>
+  </div>
+  <!-- title -->
+  <script src="slider/slider.js"></script>
+
+</body>
+
+</html>
