@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html class=''>
+
+<head>
+  <script src='//production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js'></script>
+  <script src='//production-assets.codepen.io/assets/editor/live/events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js'></script>
+  <script src='//production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js'></script>
+  <meta charset='UTF-8'>
+  <meta name="robots" content="noindex">
+  <link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+  <link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+  <link rel="canonical" href="https://codepen.io/sara_bianchi94/pen/LLOVYy?depth=everything&limit=all&order=popularity&page=77&q=image&show_forks=false" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style class="cp-pen-styles">
+    @import url("https://fonts.googleapis.com/css?family=Raleway:300,400");
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      height: 100vh;
+      background: #84e8dc;
+      background: -moz-linear-gradient(-45deg, #84e8dc 0%, #f4ed8b 100%);
+      background: -webkit-linear-gradient(-45deg, #84e8dc 0%, #f4ed8b 100%);
+      background: linear-gradient(135deg, #84e8dc 0%, #f4ed8b 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#84e8dc', endColorstr='#f4ed8b', GradientType=1);
+    }
+
+    header {
+      padding: 30px 0;
+    }
+
+    header h1 {
+      color: white;
+      text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.4);
+      text-align: center;
+      font-size: 40px;
+      letter-spacing: 0.4px;
+      font-family: "Raleway", sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      padding: 0 30px;
+    }
+
+    .container .thumbex {
+      margin: 10px 20px 30px;
+      width: 100%;
+      min-width: 250px;
+      max-width: 435px;
+      /*height: 300px;*/
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      overflow: hidden;
+      outline: 2px solid white;
+      outline-offset: -15px;
+      background-color: blue;
+      box-shadow: 5px 10px 40px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .container .thumbex .thumbnail {
+      overflow: hidden;
+      min-width: 50px;
+      height: 450px;
+      position: relative;
+      opacity: 3.88;
+      backface-visibility: hidden;
+      transition: all 0.1s ease-out;
+    }
+
+    .container .thumbex .thumbnail img {
+      position: absolute;
+      z-index: 1;
+      left: 50%;
+      top: 50%;
+      height: 100%;
+      width: auto;
+      transform: translate(-50%, -50%);
+      backface-visibility: hidden;
+    }
+
+    .container .thumbex .thumbnail span {
+      position: absolute;
+      z-index: 2;
+      top: calc(150px - 20px);
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 10px 10px;
+      margin: 0 45px;
+      text-align: center;
+      font-size: 20px;
+      color: white;
+      font-weight: 300;
+      font-family: "Raleway", sans-serif;
+      letter-spacing: 0.2px;
+      transition: all 0.3s ease-out;
+    }
+
+    .container .thumbex .thumbnail:hover {
+      backface-visibility: hidden;
+      transform: scale(1.15, 1.15);
+      opacity: 1;
+    }
+
+    .container .thumbex .thumbnail:hover span {
+      opacity: 0;
+    }
+    h2{
+      color: black;
+      text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.4);
+      text-align: center;
+      font-size: 30px;
+      letter-spacing: 0.4px;
+      font-family: "Raleway", sans-serif;
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>КОМАРНИЦИ</h1>
+    <h2>Се изработуваат од висококвалитетни алуминиумски рамки и мрежи изработени од стаклени влакна со покритие од тефлон. Не бараат скоро никаква грижа.</h2>
+  </header>
+  <div class="container">
+    <div class="thumbex">
+      <div class="thumbnail"><a href="#"> <img src="staticen.jpg"/><span>Статичен - 15 евра квадрат</span></a></div>
+    </div>
+    <div class="thumbex">
+      <div class="thumbnail"><a href="#"><img src="vrata_komarnik.jpg"/><span>Врата_комарник- 25 евра квадрат</span></a></div>
+    </div>
+    <div class="thumbex">
+      <div class="thumbnail"><a href="#"><img src="rolo.jpg" /><span>Роло - 30 евра квадрат</span></a></div>
+    </div>
+    <div class="thumbex">
+      <div class="thumbnail"><a href="#"><img src="plise.jpg" /><span>Плисе - 45 евра квадрат</span></a></div>
+    </div>
+  </div>
+  <script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <script>
+    // No javascript!
+    //# sourceURL=pen.js
+  </script>
+</body>
+
+</html>
