@@ -8,17 +8,21 @@
     @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
     /* written by riliwan balogun http://www.facebook.com/riliwan.rabo*/
 
+    #back{
+      margin-top: 20px;
+    }
+
     .board {
       width: 75%;
       margin: 110px auto;
       box-shadow: 10px 10px #ccc, -10px 20px #ddd;
-      height:400px;
+      height: 400px;
     }
 
     .board .nav-tabs {
       position: relative;
-       border-bottom: 0;
-       width: 80%;
+      border-bottom: 0;
+      width: 80%;
       margin: 80px auto;
       margin-bottom: 0;
       margin-left: 120;
@@ -42,7 +46,7 @@
       width: 60%;
       margin: 0 auto;
       left: -50;
-      right:0;
+      right: 0;
       top: 50%;
       z-index: 1;
     }
@@ -72,34 +76,37 @@
       font-size: 25px;
     }
 
-    span.round-tabs.one{
-        color: #f1685e;border: 2px solid #f1685e;
+    span.round-tabs.one {
+      color: #f1685e;
+      border: 2px solid #f1685e;
     }
 
-    li.active span.round-tabs.one{
-        background: #fff !important;
-        border: 2px solid #ddd;
-        color: #f1685e;
+    li.active span.round-tabs.one {
+      background: #fff !important;
+      border: 2px solid #ddd;
+      color: #f1685e;
     }
 
-    span.round-tabs.two{
-        color: rgb(34, 194, 34);border: 2px solid rgb(34, 194, 34);
+    span.round-tabs.two {
+      color: rgb(34, 194, 34);
+      border: 2px solid rgb(34, 194, 34);
     }
 
-    li.active span.round-tabs.two{
-        background: #fff !important;
-        border: 2px solid #ddd;
-        color: rgb(34, 194, 34);
+    li.active span.round-tabs.two {
+      background: #fff !important;
+      border: 2px solid #ddd;
+      color: rgb(34, 194, 34);
     }
 
-    span.round-tabs.three{
-        color: #febe29;border: 2px solid #febe29;
+    span.round-tabs.three {
+      color: #febe29;
+      border: 2px solid #febe29;
     }
 
-    li.active span.round-tabs.three{
-        background: #fff !important;
-        border: 2px solid #ddd;
-        color: #febe29;
+    li.active span.round-tabs.three {
+      background: #fff !important;
+      border: 2px solid #ddd;
+      color: #febe29;
     }
 
     .nav-tabs>li.active>a span.round-tabs {
@@ -192,7 +199,6 @@
         position: absolute;
         left: 35%;
       }
-
     }
   </style>
 </head>
@@ -232,10 +238,9 @@
           <div class="tab-content">
             <div class="tab-pane fade in active" id="home">
               <h3 class="head text-center"><b>ЛОКАЦИЈА:</b></h3>
-              <h3 class="text-center">ул.Добромир Хрс бр.55-а - СКОПЈЕ</h3>
-              <h3 class="text-center">ул.Солунска бр.286-а - БИТОЛА</h3>
-              <h3 class="text-center">ул.Бул.Цветан Димов бр.3-а - КАВАДАРЦИ</span></h3>
-
+              <h3 class="text-center">ул.Булевар Србија бр.8 - СКОПЈЕ  <a href="#" id="mapaSkopje">види мапа</a></h3>
+              <h3 class="text-center">ул.Солунска бр.286-а - БИТОЛА <a href="#" id="mapaBitola">види мапа</a></h3>
+              <h3 class="text-center">ул.Бул.Цветан Димов бр.3-а - КАВАДАРЦИ </span><a href="#" id="mapaKavadarci">види мапа</a></h3>
             </div>
             <div class="tab-pane fade" id="profile">
               <h3 class="head text-center"><b>КОНТАКТ НА ТЕЛ:</b></h3>
@@ -247,14 +252,57 @@
               <h3 class="head text-center"><b>КОНТАКТ НА email АДРЕСА:</b></h3>
               <h3 class="text-center">stimsasko@hotmail.com</h3>
             </div>
+          </div>
         </div>
       </div>
-    </div>
   </section>
+  <iframe id="mSk" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.2461974464213!2d21.459060350727082!3d41.973523579112666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135415e4e1e013a1%3A0xdb757b22a0f0276a!2sBoulevard+Serbia+8%2C+Skopje+1000!5e0!3m2!1sen!2smk!4v1520791797011"
+    width="100%" height="90%" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe id="mBt" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.984140038302!2d21.33565445043928!3d41.025602926206936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135724fcac9a38b5%3A0x60004b0954bd69b7!2z0KHQvtC70YPQvdGB0LrQsCAyODYsINCR0LjRgtC-0LvQsA!5e0!3m2!1smk!2smk!4v1520794778963"
+    width="100%" height="90%" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe id="mKa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.8504283685943!2d22.00551335045368!3d41.44246700044089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13566507203bc86b%3A0x49d7daa52b5f0c80!2z0JHRg9C70LXQstCw0YAg0KbQstC10YLQsNC9INCU0LjQvNC-0LIsINCa0LDQstCw0LTQsNGA0YbQuA!5e0!3m2!1smk!2smk!4v1520795225948"
+    width="100%" height="90%" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <button class="btn btn-primary" id="back" onclick="back()">Назад</button>
   <script>
+  $('iframe').hide();
+  $('#back').hide();
+
     $(function() {
       $('a[title]').tooltip();
     });
+
+    $('#mapaSkopje').click(function() {
+      $('.container').hide();
+      $('#mSk').show();
+      $('#mBt').hide();
+      $('#mKa').hide();
+      $('#back').show();
+    });
+
+    $('#mapaBitola').click(function() {
+      $('.container').hide();
+      $('#mBt').show();
+      $('#mSk').hide();
+      $('#mKa').hide();
+      $('#back').show();
+    });
+
+    $('#mapaKavadarci').click(function() {
+      $('.container').hide();
+      $('#mKa').show();
+      $('#mBt').hide();
+      $('#mSk').hide();
+      $('#back').show();
+    });
+
+    $('#back').click(function() {
+      $('.container').show();
+      $('#mKa').hide();
+      $('#mBt').hide();
+      $('#mSk').hide();
+      $('#back').hide();
+    });
+
   </script>
 </body>
 
