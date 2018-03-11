@@ -77,6 +77,10 @@ h1 a:hover {
   background-image: url("aluplast.jpeg")
 }
 
+.slider ul li:nth-of-type(4) {
+  background-image: url("trocal1.jpg")
+}
+
 .slider ul li:last-of-type {
   background-image: url("avtobus.jpg")
 }
@@ -216,7 +220,7 @@ h1 a:hover {
 }
 
 .slide button:hover {
-  opacity: 0.9
+  opacity: 0.5
 }
 
 .slide img {
